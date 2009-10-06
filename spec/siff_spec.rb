@@ -29,5 +29,9 @@ describe "Siff" do
     it "returns the currency for Canada" do
       currency_for(:CA).should == 'CAD'
     end
+    
+    it "returns 'unknown' if it doesn't know the currency" do
+      currency_for(:MARS).should == 'unknown'
+    end
   end
 end

@@ -33,6 +33,6 @@ module Siff
     :US => 'USD'
   }
   def currency_for(country_code)
-    SIFFS[country_code]
+    SIFFS[country_code] || 'unknown'
   end
 end
