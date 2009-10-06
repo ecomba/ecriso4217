@@ -3,6 +3,7 @@ module Siff
   SIFFS = {
     :BE => 'EUR',
     :BG => 'EUR',
+    :CA => 'CAD',
     :CZ => 'EUR',
     :DK => 'EUR',
     :DE => 'EUR',
@@ -28,7 +29,8 @@ module Siff
     :SK => 'EUR',
     :FI => 'EUR',
     :SE => 'EUR',
-    :UK => 'GBP'
+    :UK => 'GBP',
+    :US => 'USD'
   }
   def currency_for(country_code)
     SIFFS[country_code]

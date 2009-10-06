@@ -21,5 +21,13 @@ describe "Siff" do
     it "returns the currency for Bulgaria" do
       currency_for(:BG).should == 'EUR'
     end
+    
+    it "returns the currency for United States of America" do
+      currency_for(:US).should == 'USD'
+    end
+    
+    it "returns the currency for Canada" do
+      currency_for(:CA).should == 'CAD'
+    end
   end
 end
