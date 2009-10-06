@@ -33,5 +33,9 @@ describe "Siff" do
     it "returns 'unknown' if it doesn't know the currency" do
       currency_for(:MARS).should == 'unknown'
     end
+    
+    it "returns the requested default if it doesn't know the currency" do
+      currency_for(:MARS, 'GBP').should == 'GBP'
+    end
   end
 end

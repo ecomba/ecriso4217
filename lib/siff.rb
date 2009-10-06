@@ -32,7 +32,8 @@ module Siff
     :UK => :GBP,
     :US => :USD
   }
-  def currency_for(country_code)
-    (SIFFS[country_code] || :unknown).to_s
+  
+  def currency_for(country_code, default_when_currency_not_found='unknown')
+    (SIFFS[country_code] || default_when_currency_not_found).to_s
   end
 end
