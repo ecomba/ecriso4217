@@ -10,7 +10,16 @@ describe "Siff" do
     end
     
     it "returns the currency for the United Kingdom" do
+      currency_for(:UK).should == 'GBP'
       currency_for(:GB).should == 'GBP'
+    end
+    
+    it "returns the currency for Ireland" do
+      currency_for(:IE).should == 'EUR'
+    end
+    
+    it "returns the currency for Bulgaria" do
+      currency_for(:BG).should == 'EUR'
     end
   end
 end
