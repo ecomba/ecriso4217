@@ -4,11 +4,11 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "siff"
+    gem.name = "iso4217"
     gem.summary = %Q{TODO: one-line summary of your gem}
     gem.description = %Q{TODO: longer description of your gem}
     gem.email = "ecomba@nexwerk.com"
-    gem.homepage = "http://github.com/ecomba/siff"
+    gem.homepage = "http://github.com/ecomba/iso4217"
     gem.authors = ["Enrique Comba Riepenhausen"]
     gem.add_development_dependency "rspec"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
@@ -42,7 +42,7 @@ Rake::RDocTask.new do |rdoc|
   end
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "siff #{version}"
+  rdoc.title = "iso4217 #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
