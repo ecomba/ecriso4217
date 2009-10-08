@@ -5,8 +5,10 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "iso4217"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Currencies as described by the ISO 4217 Standard}
+    gem.description = %Q{When dealing with currencies in code you don't need to roll up your
+                         own interpretation of a currency. Now you can just use the ISO 4217
+                         gem to work with them.}
     gem.email = "ecomba@nexwerk.com"
     gem.homepage = "http://github.com/ecomba/iso4217"
     gem.authors = ["Enrique Comba Riepenhausen"]
