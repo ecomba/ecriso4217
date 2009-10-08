@@ -19,4 +19,3 @@ module ISO4217
   GBP= Currency.new(:GBP, "U+00a3", 'Pound sterling')
 
 end
-
