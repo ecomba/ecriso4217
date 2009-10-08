@@ -1,6 +1,17 @@
 = ISO4217 
 
-Description goes here.
+(extract from Wikipedia)
+
+ISO 4217 is the international standard describing three-letter codes 
+(also known as the currency code) to define the names of currencies 
+established by the International Organization for Standardization (ISO). 
+The ISO 4217 code list is the established norm in banking and business 
+all over the world for defining different currencies, and in many countries
+the codes for the more common currencies are so well known publicly, that
+exchange rates published in newspapers or posted in banks use only these 
+to define the different currencies, instead of translated currency names 
+or ambiguous currency symbols. ISO 4217 codes are used on airline tickets 
+and international train tickets to remove any ambiguity about the price.
 
 == Note on Patches/Pull Requests
  
