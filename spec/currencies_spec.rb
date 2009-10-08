@@ -11,5 +11,9 @@ describe "Currencies" do
     it "returns the american dollar" do
       currency("USD").should == ISO4217::AMERICAN_DOLLAR
     end
+    
+    it "returns the euro... :S " do
+      currency(:EUR).should == ISO4217::EURO
+    end
   end
 end
