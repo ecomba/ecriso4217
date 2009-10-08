@@ -31,7 +31,7 @@ describe ISO4217 do
   context "finding currency codes or unknown countries" do
     
     it "returns 'unknown' if it doesn't know the currency" do
-      currency_code_for(:MARS).should == 'unknown'
+      currency_code_for(:MARS).should == 'NAC'
     end
    
 
