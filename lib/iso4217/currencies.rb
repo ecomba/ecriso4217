@@ -17,5 +17,9 @@ module ISO4217
 
   EURO= Currency.new(:EUR, "U+20ac", 'euro')
   GBP= Currency.new(:GBP, "U+00a3", 'Pound sterling')
-
+  USD= AMERICAN_DOLLAR
+  
+  def currency(name)
+    eval(name.to_s)
+  end
 end
