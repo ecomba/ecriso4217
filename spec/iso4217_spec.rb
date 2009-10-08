@@ -74,7 +74,7 @@ describe ISO4217 do
     end
 
     it "returns the currency object for the dollar if searching for the American currency" do
-      currency_for(:US).should == ISO4217::USD
+      currency_for(:US).should == ISO4217::AMERICAN_DOLLAR
     end
   end
 
@@ -92,7 +92,7 @@ describe ISO4217 do
     end
 
     it "returns the (human readable) name of the US dollar" do
-      ISO4217::USD.name.should == 'US dollar'
+      ISO4217::AMERICAN_DOLLAR.name.should == 'US dollar'
     end
   end
 

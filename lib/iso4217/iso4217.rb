@@ -1,8 +1,4 @@
-module ISO4217# TODO: Rename module and project to ISO4217
-  EURO = Currency.new(:EUR, "U+20ac", 'euro')
-  GBP = Currency.new(:GBP, "U+00a3", 'Pound sterling')
-  USD = Currency.new(:USD, "U+0024", 'US dollar')
-  GENERIC_CURRENCY_SYMBOL = "U+00a4"
+module ISO4217
 
   COUNTRIES = {
     :BE => EURO, 
@@ -34,11 +30,11 @@ module ISO4217# TODO: Rename module and project to ISO4217
     :FI => EURO,
     :SE => EURO,
     :UK => GBP,
-    :US => USD
+    :US => AMERICAN_DOLLAR 
   }
 
   def currency_for(country_code, default_when_currency_not_found= :NAC)
-    COUNTRIES[country_code] || Currency.new(default_when_currency_not_found, GENERIC_CURRENCY_SYMBOL, 'unknown')
+    COUNTRIES[country_code] || Currency.new(default_when_currency_not_found, GENERIC_CURRENCY_SIGN, 'unknown')
   end
 
   def currency_code_for(country_code, default_when_currency_not_found= :NAC)
