@@ -2,6 +2,7 @@ module ISO4217
 
   GENERIC_CURRENCY_SIGN= "U+00a4"
   DOLLAR_SIGN = "U+0024"
+
   CURRENCIES = [
     ALBANIAN_LEKE=              Currency.new(:ALL, "U+004cU+0065U+6b", 'Lek'),
     AMERICAN_DOLLAR=            Currency.new(:USD, DOLLAR_SIGN, 'US dollar'),
@@ -25,6 +26,10 @@ module ISO4217
     CAMBODIAN_RIELS=            Currency.new(:KHR, "U+17db", 'Riel'),
     CANADIAN_DOLLAR=            Currency.new(:CAD, "CanU+0024", 'Canadian dollar'),
     CAYMAN_ISLANDS_DOLLARS=     Currency.new(:KYD, DOLLAR_SIGN, 'Cayman Islands dollar'),
+    CHILE_PESOS=                Currency.new(:CLP, DOLLAR_SIGN, 'Chilean peso'),
+    CHINA_YUAN_RENMINBI=        Currency.new(:CNY, "U+00a5", 'Chinese Yuan'),
+    COLOMBIAN_PESO=             Currency.new(:COP, DOLLAR_SIGN, 'Colombian peso'),
+    COSTA_RICA_COLON=           Currency.new(:CRC, "U+20a1", 'Costa Rica colon'),
 
     EURO=                       Currency.new(:EUR, "U+20ac", 'euro')
   ]

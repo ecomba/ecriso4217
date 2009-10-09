@@ -91,6 +91,22 @@ describe "Currencies" do
     it "returns the Cayman Islands dollar" do
       currency(:KYD).should == ISO4217::CAYMAN_ISLANDS_DOLLARS
     end
+
+    it "returns the chilean peso" do
+      currency(:CLP).should == ISO4217::CHILE_PESOS
+    end
+
+    it "returns the chinese yuan" do
+      currency(:CNY).should == ISO4217::CHINA_YUAN_RENMINBI
+    end
+
+    it "returns the colombian peso" do
+      currency(:COP).should == ISO4217::COLOMBIAN_PESO
+    end
+    
+    it "returns the Costa Rican colon" do
+      currency(:CRC).should == ISO4217::COSTA_RICA_COLON
+    end
     
     it "returns the euro... :S " do
       currency(:EUR).should == ISO4217::EURO
