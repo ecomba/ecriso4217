@@ -70,7 +70,7 @@ describe ISO4217 do
     end
 
     it "returns the currency object for GBP when searching for the currency in Great Britain" do
-      [:GB, :UK].each {|country| currency_for(country).should == ISO4217::GBP}
+      [:GB, :UK].each {|country| currency_for(country).should == ISO4217::BRITAIN_POUND}
     end
 
     it "returns the currency object for the dollar if searching for the American currency" do
@@ -88,7 +88,7 @@ describe ISO4217 do
     end
 
     it "returns the (human readable) name of the pound sterling" do
-      ISO4217::GBP.name.should == 'Pound sterling'
+      ISO4217::BRITAIN_POUND.name.should == 'Pound sterling'
     end
 
     it "returns the (human readable) name of the US dollar" do

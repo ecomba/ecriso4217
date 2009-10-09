@@ -3,7 +3,7 @@ module ISO4217
   COUNTRIES = {
     :BE => EURO, 
     :BG => EURO,
-    :CA => Currency.new(:CAD, "CanU+0024", 'Canadian dollar'),
+    :CA => CANADIAN_DOLLAR,
     :CZ => EURO,
     :DK => EURO,
     :DE => EURO,
@@ -12,7 +12,7 @@ module ISO4217
     :EL => EURO,
     :ES => EURO,
     :FR => EURO,
-    :GB => GBP, 
+    :GB => BRITAIN_POUND, 
     :IT => EURO,
     :CY => EURO,
     :LV => EURO,
@@ -29,7 +29,7 @@ module ISO4217
     :SK => EURO,
     :FI => EURO,
     :SE => EURO,
-    :UK => GBP,
+    :UK => BRITAIN_POUND,
     :US => AMERICAN_DOLLAR 
   }
 
