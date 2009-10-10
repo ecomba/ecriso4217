@@ -183,5 +183,81 @@ describe "Currencies" do
     it "returns the hong kong dollar" do
       currency(:HKD).should == ISO4217::HONG_KONG_DOLLAR
     end
+
+    it "returns the hungarian florint" do
+      currency(:HUF).should == ISO4217::HUNGARY_FLORINT
+    end
+
+    it "returns the icelandic kronur" do
+      currency(:ISK).should == ISO4217::ICELAND_KRONUR
+    end
+
+    it "returns the indian rupee" do
+      currency(:INR).should == ISO4217::INDIAN_RUPEE
+    end
+
+    it "returns the indonesian Rupiah" do
+      currency(:IDR).should == ISO4217::INDONESIAN_RUPIAH
+    end
+
+    it "returns the iranian rial" do
+      currency(:IRR).should == ISO4217::IRAN_RIALS
+    end
+
+    it "returns the isle of man pound" do
+      currency(:IMP).should == ISO4217::ISLE_OF_MAN_POUND
+    end
+
+    it "returns the israel new shekel" do
+      currency(:ILS).should == ISO4217::ISRAEL_NEW_SHEKEL
+    end
+
+    it "returns the jamaica dollar" do
+      currency(:JMD).should == ISO4217::JAMAICA_DOLLAR
+    end
+
+    it "returns the japanese jen" do
+      currency(:JPY).should == ISO4217::JAPAN_YEN
+    end
+
+    it "returns the jersey pound" do
+      currency(:JEP).should == ISO4217::JERSEY_POUND
+    end
+
+    it "returns the kazakhstan tenge" do
+      currency(:KZT).should == ISO4217::KAZAKHSTAN_TENGE
+    end
+
+    it "returns the north korean won" do
+      currency(:KPW).should == ISO4217::NORTH_KOREAN_WON
+    end
+
+    it "returns the south korean won" do
+      currency(:KRW).should == ISO4217::SOUTH_KOREAN_WON
+    end
+    
+    it "returns the kyrgyzstan soms" do
+      currency(:KGS).should == ISO4217::KYRGYZSTAN_SOMS
+    end
+
+    it "returns the laos kip" do
+      currency(:LAK).should == ISO4217::LAOS_KIPS
+    end
+
+    it "returns the latvian lati" do
+      currency(:LVL).should == ISO4217::LATVIAN_LATI
+    end
+
+    it "returns the lebanese pound" do
+      currency(:LBP).should == ISO4217::LEBANON_POUND
+    end
+
+    it "returns the liberian dollar" do
+      currency(:LRD).should == ISO4217::LIBERIA_DOLLARS
+    end
+
+    it "returns the lichtenstein swiss francs" do
+      currency(:CHF).should == ISO4217::LICHTENSTEIN_SWITZERLAND_FRANCS
+    end
   end
 end

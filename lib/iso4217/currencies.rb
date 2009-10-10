@@ -49,8 +49,26 @@ module ISO4217
     GUERNSEY_POUND=             Currency.new(:GGP, POUND_SIGN, 'Guernsey pound'),
     GUYANA_DOLLAR=              Currency.new(:GYD, DOLLAR_SIGN, 'Guyana dollar'),
     HONDURAS_LEMPIRAS=          Currency.new(:HNL, "U+004c", 'Lempira'),
-    HONG_KONG_DOLLAR=           Currency.new(:HKD, DOLLAR_SIGN, 'Hong Kong dollar')
-
+    HONG_KONG_DOLLAR=           Currency.new(:HKD, DOLLAR_SIGN, 'Hong Kong dollar'),
+    HUNGARY_FLORINT=            Currency.new(:HUF, "U+0046U+0074", 'Floringt'),
+    ICELAND_KRONUR=             Currency.new(:ISK, "U+006bU+0072", 'Iceland krona'),
+    INDIAN_RUPEE=               Currency.new(:INR, "U+20a8", 'Indian rupee'),
+    INDONESIAN_RUPIAH=          Currency.new(:IDR, "U+0082U+0112", 'Rupiah'),
+    IRAN_RIALS=                 Currency.new(:IRR, "U+fdfc", 'Iranian rial'),
+    ISLE_OF_MAN_POUND=          Currency.new(:IMP, POUND_SIGN, 'Pound'),
+    ISRAEL_NEW_SHEKEL=          Currency.new(:ILS, "U+20aa", 'Israeli new sheqel'),
+    JAMAICA_DOLLAR=             Currency.new(:JMD, "U+004a#{DOLLAR_SIGN}", 'Jamaican dollar'),
+    JAPAN_YEN=                  Currency.new(:JPY, "U+00a5", 'Japanese yen'),
+    JERSEY_POUND=               Currency.new(:JEP, POUND_SIGN, 'Jersey pound'),
+    KAZAKHSTAN_TENGE=           Currency.new(:KZT, "U+043bU+432", 'Tenge'),
+    NORTH_KOREAN_WON=           Currency.new(:KPW, "U+20a9", 'North Korean won'),
+    SOUTH_KOREAN_WON=           Currency.new(:KRW, "U+20a9", 'South Korean won'),
+    KYRGYZSTAN_SOMS=            Currency.new(:KGS, "U+043bU+0432", 'Som'),
+    LAOS_KIPS=                  Currency.new(:LAK, "U+20ad", 'Kip'),
+    LATVIAN_LATI=               Currency.new(:LVL, "U+004cU+0073", 'Latvian lats'),
+    LEBANON_POUND=              Currency.new(:LBP, POUND_SIGN, 'Lebanese pound'),
+    LIBERIA_DOLLARS=            Currency.new(:LRD, DOLLAR_SIGN, 'Liberian dollar'),
+    LICHTENSTEIN_SWITZERLAND_FRANCS=  Currency.new(:CHF, "U+0043U+0048U+0046", 'Swiss franc')
   ]
 
   CURRENCY_BY_CODE = Hash.new 
