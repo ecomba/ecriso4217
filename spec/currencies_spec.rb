@@ -127,9 +127,61 @@ describe "Currencies" do
     it "returns the dominican republic peso" do
       currency(:DOP).should == ISO4217::DOMINICAN_REPUBLIC_PESOS
     end
+
+    it "returns the east caribbean dollars" do
+      currency(:XCD).should  == ISO4217::EAST_CARIBBEAN_DOLLAR
+    end
+
+    it "returns the egypt pound" do
+      currency(:EGP).should == ISO4217::EGYPT_POUND
+    end
     
-    it "returns the euro... :S " do
+    it "returns the salvador colon" do
+     currency(:SVC).should == ISO4217::EL_SALVADOR_COLON
+    end
+
+    it "returns the estonian krooni" do
+      currency(:EEK).should == ISO4217::ESTONIAN_KROONI
+    end
+
+    it "returns the euro " do
       currency(:EUR).should == ISO4217::EURO
+    end
+
+    it "returns the falkland islands pound" do
+      currency(:FKP).should == ISO4217::FALKLAND_ISLANDS_POUND
+    end
+
+    it "returns the fiji dollar" do
+      currency(:FJD).should == ISO4217::FIJI_DOLLAR
+    end
+
+    it "returns the ghana cedi" do
+      currency(:GHC).should == ISO4217::GHANA_CEDI
+    end
+
+    it "returns the gibraltar pound" do
+      currency(:GIP).should == ISO4217::GIBRLATAR_POUND
+    end
+
+    it "returns the guatemala quetzales" do
+      currency(:GTQ).should == ISO4217::GUATEMALA_QUEZALES
+    end
+
+    it "returns the guernsey pound" do
+      currency(:GGP).should == ISO4217::GUERNSEY_POUND
+    end
+
+    it "returns the guyana dollar" do
+      currency(:GYD).should == ISO4217::GUYANA_DOLLAR
+    end
+
+    it "returns the honduras lempiras" do
+      currency(:HNL).should == ISO4217::HONDURAS_LEMPIRAS
+    end
+
+    it "returns the hong kong dollar" do
+      currency(:HKD).should == ISO4217::HONG_KONG_DOLLAR
     end
   end
 end
