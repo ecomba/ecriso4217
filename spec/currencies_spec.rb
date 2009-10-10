@@ -256,8 +256,200 @@ describe "Currencies" do
       currency(:LRD).should == ISO4217::LIBERIA_DOLLARS
     end
 
-    it "returns the lichtenstein swiss francs" do
-      currency(:CHF).should == ISO4217::LICHTENSTEIN_SWITZERLAND_FRANCS
+    it "returns the swiss francs" do
+      currency(:CHF).should == ISO4217::SWITZERLAND_FRANCS
+    end
+
+    it "returns the lithuanian litai" do
+      currency(:LTL).should == ISO4217::LITHUANIA_LITAI
+    end
+
+    it "returns the macedonian denar" do
+      currency(:MKD).should == ISO4217::MACEDONIA_DENARS
+    end
+
+    it "returns the malaysan ringgit" do
+      currency(:MYR).should == ISO4217::MALAYSIA_RINGGITS
+    end
+
+    it "returns the mauritius rupee" do
+      currency(:MUR).should == ISO4217::MAURITIUS_RUPEES
+    end
+
+    it "returns the mexican peso" do
+      currency(:MXN).should == ISO4217::MEXICO_PESOS
+    end
+
+    it "returns the mongolian tugrik" do
+      currency(:MNT).should == ISO4217::MONGOLIA_TUGRIKS
+    end
+
+    it "returns the mozambique metical" do
+      currency(:MZN).should == ISO4217::MOZAMBIQUE_METICALS
+    end
+
+    it "returns the namibian dollar" do
+      currency(:NAD).should == ISO4217::NAMIBIA_DOLLARS
+    end
+
+    it "returns the nepal rupee" do
+      currency(:NPR).should == ISO4217::NEPAL_RUPEES
+    end
+
+    it "returns the netherland antilles guilders" do
+      currency(:ANG).should == ISO4217::NETHERLANDS_ANTILLES_GUILDERS
+    end
+
+    it "returns the new zealand dollar" do
+      currency(:NZD).should == ISO4217::NEW_ZEALAND_DOLLARS
+    end
+
+    it "returns the nicaraguan cordoba" do
+      currency(:NIO).should == ISO4217::NICARAGUA_CORDOBAS
+    end
+
+    it "returns the nigerian naira" do
+      currency(:NGN).should == ISO4217::NIGERIA_NAIRAS
+    end
+
+    it "returns the norwegian krone" do
+      currency(:NOK).should == ISO4217::NORWAY_KRONE
+    end
+
+    it "returns the oman rial" do
+      currency(:OMR).should == ISO4217::OMAN_RIALS
+    end
+
+    it "returns the pakistan rupee" do
+      currency(:PKR).should == ISO4217::PAKISTAN_RUPEES
+    end
+
+    it "returns the panaman balboa" do
+      currency(:PAB).should == ISO4217::PANAMA_BALBOA
+    end
+
+    it "returns the paraguayan guarani" do
+      currency(:PYG).should == ISO4217::PARAGUAY_GUARANI
+    end
+
+    it "returns the peruvian nuevo soles" do
+      currency(:PEN).should == ISO4217::PERU_NUEVOS_SOLES
+    end
+
+    it "returns the philippines peso" do
+      currency(:PHP).should == ISO4217::PHILIPPINES_PESOS
+    end
+
+    it "returns the polish zlotych" do
+      currency(:PLN).should == ISO4217::POLAND_ZLOTYCH
+    end
+
+    it "returns the qatar rials" do
+      currency(:QAR).should == ISO4217::QATAR_RIALS
+    end
+
+    it "returns the romanian new lei" do
+      currency(:RON).should == ISO4217::ROMANIA_NEW_LEI
+    end
+
+    it "returns the russian ruble" do
+      currency(:RUB).should == ISO4217::RUSSIA_RUBLES
+    end
+
+    it "returns the saint helena pound" do
+      currency(:SHP).should == ISO4217::SAINT_HELENA_POUNDS
+    end
+
+    it "returns the saudi arabian riyal" do
+      currency(:SAR).should == ISO4217::SAUDI_ARABIA_RIYALS
+    end
+
+    it "returns the serbian dinar" do
+      currency(:RSD).should == ISO4217::SERBIA_DINARS
+    end
+
+    it "returns the seychelies rupee" do
+      currency(:SCR).should == ISO4217::SEYCHELIES_RUPEES
+    end
+
+    it "returns the singapore dollar" do
+      currency(:SGD).should == ISO4217::SINGAPORE_DOLLARS
+    end
+
+    it "returns the solomon islands dollar" do
+      currency(:SBD).should == ISO4217::SOLOMON_ISLANDS_DOLLARS
+    end
+
+    it "returns the somalia shilling" do
+      currency(:SOS).should == ISO4217::SOMALIA_SHILLINGS
+    end
+
+    it "returns the south african rand" do
+      currency(:ZAR).should == ISO4217::SOUTH_AFRICA_RAND
+    end
+
+    it "returns the sri lanka rupee" do
+      currency(:LKR).should == ISO4217::SRI_LANKA_RUPEES
+    end
+
+    it "returns the swedish kronor" do
+      currency(:SEK).should == ISO4217::SWEDEN_KRONOR
+    end
+
+    it "returns the swiss frnac" do
+      currency(:CHF).should == ISO4217::SWITZERLAND_FRANCS
+    end
+
+    it "returns the suriname dollar" do
+      currency(:SRD).should == ISO4217::SURINAME_DOLLARS
+    end
+
+    it "returns the syirian pound" do
+      currency(:SYP).should == ISO4217::SYRIA_POUNDS
+    end
+
+    it "returns the taiwanese new dollar" do
+      currency(:TWD).should == ISO4217::TAIWAN_NEW_DOLLARS
+    end
+
+    it "returns the thailand baht" do
+      currency(:THB).should == ISO4217::THAILAND_BAHT
+    end
+
+    it "returns the trinidad and tobago dollar" do
+      currency(:TTD).should == ISO4217::TRINIDAD_AND_TOBAGO_DOLLARS
+    end
+
+    it "returns the turkish lira" do
+      currency(:TRY).should == ISO4217::TURKEY_LIRA
+    end
+
+    it "returns the tuvalu dollar" do
+      currency(:TVD).should == ISO4217::TUVALU_DOLLARS
+    end
+
+    it "returns the ukraine hryvnia" do
+      currency(:UAH).should == ISO4217::UKRAINE_HRYVNIA
+    end
+
+    it "returns the uruguay peso" do
+      currency(:UYU).should == ISO4217::URUGUAY_PESOS
+    end
+
+    it "returns the uzbekistan sums" do
+      currency(:UZS).should == ISO4217::UZBEKISTAN_SUMS
+    end
+
+    it "returns the venezuelan bolivar fuerte" do
+      currency(:VEF).should == ISO4217::VENEZUELA_BOLIVARES_FUERTES
+    end
+
+    it "returns the vietnamese dong" do
+      currency(:VND).should == ISO4217::VIETNAM_DONG
+    end
+
+    it "returns the yemen rials" do
+      currency(:YER).should == ISO4217::YEMEN_RIALS
     end
   end
 end
