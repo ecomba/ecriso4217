@@ -107,6 +107,26 @@ describe "Currencies" do
     it "returns the Costa Rican colon" do
       currency(:CRC).should == ISO4217::COSTA_RICA_COLON
     end
+
+    it "returns the croatian kuna" do
+      currency(:HRK).should == ISO4217::CROATIAN_KUNA
+    end
+
+    it "returns the cuban peso" do
+      currency(:CUP).should == ISO4217::CUBA_PESOS
+    end
+
+    it "returns the czech koruna" do
+      currency(:CZK).should == ISO4217::CZECH_KORUNA
+    end
+
+    it "returns the denmark kroner" do
+      currency(:DKK).should == ISO4217::DENMARK_KRONER
+    end
+
+    it "returns the dominican republic peso" do
+      currency(:DOP).should == ISO4217::DOMINICAN_REPUBLIC_PESOS
+    end
     
     it "returns the euro... :S " do
       currency(:EUR).should == ISO4217::EURO

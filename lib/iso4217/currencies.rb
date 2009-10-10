@@ -30,6 +30,12 @@ module ISO4217
     CHINA_YUAN_RENMINBI=        Currency.new(:CNY, "U+00a5", 'Chinese Yuan'),
     COLOMBIAN_PESO=             Currency.new(:COP, DOLLAR_SIGN, 'Colombian peso'),
     COSTA_RICA_COLON=           Currency.new(:CRC, "U+20a1", 'Costa Rica colon'),
+    CROATIAN_KUNA=              Currency.new(:HRK, "U+006bU+006e", 'Croatian kuna'),
+    CUBA_PESOS=                 Currency.new(:CUP, "U+20b1", 'Cuban peso'),
+    CZECH_KORUNA=               Currency.new(:CZK, "U+004bU+010d", 'Czech Koruna'),
+    DENMARK_KRONER=             Currency.new(:DKK, "U+006bU+0072", 'Danish krone'),
+    DOMINICAN_REPUBLIC_PESOS=   Currency.new(:DOP, "U+0052U+0044U+0024", 'Dominican peso'),
+
 
     EURO=                       Currency.new(:EUR, "U+20ac", 'euro')
   ]
