@@ -123,8 +123,10 @@ module ISO4217
   CURRENCIES.each do |currency|
     CURRENCY_BY_CODE[currency.code.to_s]= currency
   end
-
-  def currency(code)
-    CURRENCY_BY_CODE[code.to_s]
+  
+  module CurrencyHelper
+    def currency(code)
+      CURRENCY_BY_CODE[code.to_s]
+    end
   end
 end

@@ -2,7 +2,7 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
 describe ISO4217 do
   
-  include ISO4217 
+  include ISO4217::CurrencyHelper
 
   EURO_COUNTRIES = [:BE, :BG, :CY, :CZ, :DK, :DE, :EE, :IE, :EL, :ES, :FR, :IT, :LV, :LT, :LU, :HU, 
                     :MT, :NL, :AT, :PL, :PT, :RO, :SI, :SK, :FI, :SE] 

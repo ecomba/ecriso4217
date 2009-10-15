@@ -1,7 +1,7 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
 describe "Currencies" do
-  include ISO4217
+  include ISO4217::CurrencyHelper
   
   context "when searching for a currency" do
     it "returns the albanian leke" do
