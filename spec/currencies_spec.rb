@@ -16,12 +16,24 @@ describe "Currencies" do
       currency(:AFN).should == ISO4217::AFGHANI
     end
 
+    it "returns the Algerian Dinar" do
+      currency(:DZD).should == ISO4217::ALGERIAN_DINAR
+    end
+
+    it "returns the Angolan Kwanza" do
+      currency(:AOA).should == ISO4217::ANGOLAN_KWANZA
+    end
+
     it "returns the argentinian peso" do
       currency(:ARS).should == ISO4217::ARGENTINA_PESOS
     end
 
-    it "returns the arubane guilder" do
-      currency(:AWG).should == ISO4217::ARUBAN_GUILDER
+    it "returns the Armenian Dran" do
+      currency(:AMD).should == ISO4217::ARMENIAN_DRAM
+    end
+
+    it "returns the Aruban florin" do
+      currency(:AWG).should == ISO4217::ARUBAN_FLORIN
     end
 
     it "returns the australian dollar" do
@@ -34,6 +46,14 @@ describe "Currencies" do
 
     it "returns the bahamian dollar" do
       currency(:BSD).should == ISO4217::BAHAMAS_DOLLAR
+    end
+
+    it "returns the Bahrani dinar" do
+      currency(:BHD).should == ISO4217::BAHRAINI_DINAR
+    end
+
+    it "returns the Bangladeshi taka" do
+      currency(:BDT).should == ISO4217::BANGLADESHI_TAKA
     end
 
     it "returns the barbados dollar" do
@@ -184,8 +204,8 @@ describe "Currencies" do
       currency(:HKD).should == ISO4217::HONG_KONG_DOLLAR
     end
 
-    it "returns the hungarian florint" do
-      currency(:HUF).should == ISO4217::HUNGARY_FLORINT
+    it "returns the hungarian forint" do
+      currency(:HUF).should == ISO4217::HUNGARY_FORINT
     end
 
     it "returns the icelandic kronur" do
