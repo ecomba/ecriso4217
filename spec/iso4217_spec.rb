@@ -4,8 +4,8 @@ describe ISO4217 do
 
   include ISO4217::CurrencyHelper
 
-  EURO_COUNTRIES = [:AD, :AT, :BE, :BG, :CY, :CZ, :DK, :DE, :EE, :IE, :EL, :ES, :FR, :IT, :LV, :LT, :LU, :HU,
-                    :MT, :NL, :PL, :PT, :RO, :SI, :SK, :FI, :SE]
+  EURO_COUNTRIES = [:AD, :AT, :BE, :CY, :DE, :IE, :ES, :FR, :IT, :LU,
+                    :MT, :NL, :PT, :SI, :SK, :FI, :GR, :MC, :ME, :SM, :SI]
 
   context "finding currency codes for known countries" do
     it "returns the currency euro code of the countries in the euro zone" do
@@ -79,6 +79,10 @@ describe ISO4217 do
       currency_code_for(:BS).should == 'BSD'
     end
 
+    it "returns the currency code for Bulgaria" do
+      currency_code_for(:BG).should == 'BGN'
+    end
+
     it "returns the currency code for Bahrain" do
       currency_code_for(:BH).should == 'BHD'
     end
@@ -89,6 +93,42 @@ describe ISO4217 do
 
     it "returns the currency code for Barbados" do
       currency_code_for(:BB).should == 'BBD'
+    end
+
+    it "returns the currency code for Czech Republic" do
+      currency_code_for(:CZ).should == 'CZK'
+    end
+
+    it "returns the currency code for Denmark" do
+      currency_code_for(:DK).should == 'DKK'
+    end
+
+    it "returns the currency code for Estonia" do
+      currency_code_for(:EE).should == 'EEK'
+    end
+
+    it "returns the currency code for Latvia" do
+      currency_code_for(:LV).should == 'LVL'
+    end
+
+    it "returns the currency code for Lithuania" do
+      currency_code_for(:LT).should == 'LTL'
+    end
+
+    it "returns the currency code for Hungary" do
+      currency_code_for(:HU).should == 'HUF'
+    end
+
+    it "returns the currency code for Poland" do
+      currency_code_for(:PL).should == 'PLN'
+    end
+
+    it "returns the currency code for Romania" do
+      currency_code_for(:RO).should == 'RON'
+    end
+
+    it "returns the currency code for Sweden" do
+      currency_code_for(:SE).should == 'SEK'
     end
 
   end
@@ -124,11 +164,11 @@ describe ISO4217 do
     end
 
     it "returns the Albanian Lek sign for Albania" do
-      currency_sign_for(:AL).should == "Lek"
+      currency_sign_for(:AL).should == "L"
     end
 
     it "returns the Algerian Dinar sign for Algeria" do
-      currency_sign_for(:DZ).should == "DA"
+      currency_sign_for(:DZ).should == "د.ج"
     end
 
     it "returns the dollar sign for American Samoa" do
@@ -152,11 +192,11 @@ describe ISO4217 do
     end
 
     it "returns the Armenian dram sign for Armenia" do
-      currency_sign_for(:AM).should == "Դ"
+      currency_sign_for(:AM).should == "դր."
     end
 
     it "returns the Aruban florin sign for Aruba" do
-      currency_sign_for(:AW).should == "Afl"
+      currency_sign_for(:AW).should == "ƒ"
     end
 
     it "returns the Australian dollar sign for Australia" do
@@ -172,7 +212,7 @@ describe ISO4217 do
     end
 
     it "returns the Bahraini dinar sign for Bahrain" do
-      currency_sign_for(:BH).should == "BD"
+      currency_sign_for(:BH).should == "ب.د"
     end
 
     it "returns the Bangladeshi taka sign for Bangladesh" do
@@ -199,84 +239,84 @@ describe ISO4217 do
     end
 
     it "returns the currency object for GBP when searching for the currency in Great Britain" do
-      [:GB, :UK].each {|country| currency_for(country).should == ISO4217::BRITAIN_POUND}
+      [:GB, :UK].each {|country| currency_for(country).should == ISO4217::BRITISH_POUND}
     end
 
     it "returns the currency object for the dollar if searching for the American currency" do
-      currency_for(:US).should == ISO4217::AMERICAN_DOLLAR
+      currency_for(:US).should == ISO4217::UNITED_STATES_DOLLAR
     end
   end
 
   context "name of a currency" do
     it "returns the (human readable) name of the euro" do
-      ISO4217::EURO.name.should == 'euro'
+      ISO4217::EURO.name.should == 'Euro'
     end
 
     it "returns the (human readable) name of the Canadian dollar" do
-      currency_for(:CA).name.should == 'Canadian dollar'
+      currency_for(:CA).name.should == 'Canadian Dollar'
     end
 
     it "returns the (human readable) name of the pound sterling" do
-      ISO4217::BRITAIN_POUND.name.should == 'Pound sterling'
+      ISO4217::BRITISH_POUND.name.should == 'Pound Sterling'
     end
 
     it "returns the (human readable) name of the US dollar" do
-      ISO4217::AMERICAN_DOLLAR.name.should == 'US dollar'
+      ISO4217::UNITED_STATES_DOLLAR.name.should == 'US Dollar'
     end
 
     it "returns the (human readable) name of the Afghani" do
-      ISO4217::AFGHANI.name.should == 'Afghani'
+      ISO4217::AFGHAN_AFGHANI.name.should == 'Afghan Afghani'
     end
 
     it "returns the (human readable) name of the Albanian Lek" do
-      ISO4217::ALBANIAN_LEK.name.should == 'Lek'
+      ISO4217::ALBANIAN_LEK.name.should == 'Albanian Lek'
     end
 
     it "returns the (human readable) name of the Algerian Dinar" do
-      ISO4217::ALGERIAN_DINAR.name.should == 'Algerian dinar'
+      ISO4217::ALGERIAN_DINAR.name.should == 'Algerian Dinar'
     end
 
     it "returns the (human readable) name of the Angolan kwanza" do
-      ISO4217::ANGOLAN_KWANZA.name.should == 'Angolan kwanza'
+      ISO4217::ANGOLAN_KWANZA.name.should == 'Angolan Kwanza'
     end
 
     it "returns the (human readable) name of the Armenian dram" do
-      ISO4217::ARMENIAN_DRAM.name.should == 'Armenian dram'
+      ISO4217::ARMENIAN_DRAM.name.should == 'Armenian Dram'
     end
 
     it "returns the (human readable) name of the Aruban florin" do
-      ISO4217::ARUBAN_FLORIN.name.should == 'Aruban florin'
+      ISO4217::ARUBAN_FLORIN.name.should == 'Aruban Florin'
     end
 
     it "returns the (human readable) name of the Australian dollar" do
-      ISO4217::AUSTRALIAN_DOLLAR.name.should == 'Australian dollar'
+      ISO4217::AUSTRALIAN_DOLLAR.name.should == 'Australian Dollar'
     end
 
     it "returns the (human readable) name of the Azerbaijan manat" do
-      ISO4217::AZERBAIJANIAN_MANAT.name.should == 'Azerbaijani manat'
+      ISO4217::AZERBAIJANI_MANAT.name.should == 'Azerbaijani Manat'
     end
 
     it "returns the (human readable) name of the Bahamian dollar" do
-      ISO4217::BAHAMAS_DOLLAR.name.should == 'Bahamian dollar'
+      ISO4217::BAHAMIAN_DOLLAR.name.should == 'Bahamian Dollar'
     end
 
     it "returns the (human readable) name of the Bahraini dinar" do
-      ISO4217::BAHRAINI_DINAR.name.should == 'Bahraini dinar'
+      ISO4217::BAHRAINI_DINAR.name.should == 'Bahraini Dinar'
     end
 
     it "returns the (human readable) name of the Bangladeshi taka" do
-      ISO4217::BANGLADESHI_TAKA.name.should == 'Bangladeshi taka'
+      ISO4217::BANGLADESHI_TAKA.name.should == 'Bangladeshi Taka'
     end
 
     it "returns the (human readable) name of the Barbados dollar" do
-      ISO4217::BARBADOS_DOLLAR.name.should == 'Barbados dollar'
+      ISO4217::BARBADIAN_DOLLAR.name.should == 'Barbadian Dollar'
     end
 
   end
 
   context "printing a curency object" do
     it "prints the currency object for the EURO" do
-      ISO4217::EURO.to_s.should == "Code: EUR | Sign: € | Currency: euro"
+      ISO4217::EURO.to_s.should == "Code: EUR | Sign: € | Currency: Euro"
     end
   end
 end
