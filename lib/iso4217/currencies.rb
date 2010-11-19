@@ -5,7 +5,7 @@ module ISO4217
   POUND_SIGN= "U+00a3"
 
   CURRENCIES = [
-    ALBANIAN_LEKE=                  Currency.new(:ALL, "U+004cU+0065U+6b", 'Lek'),
+    ALBANIAN_LEK=                   Currency.new(:ALL, "U+004cU+0065U+6b", 'Lek'),
     AMERICAN_DOLLAR=                Currency.new(:USD, DOLLAR_SIGN, 'US dollar'),
     AFGHANI=                        Currency.new(:AFN, "U+060b", 'Afghani'),
     ARGENTINA_PESOS=                Currency.new(:ARS, "U+0024", 'Argentine peso'),

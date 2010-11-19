@@ -5,7 +5,7 @@ describe "Currencies" do
 
   context "when searching for a currency" do
     it "returns the albanian leke" do
-      currency(:ALL).should == ISO4217::ALBANIAN_LEKE
+      currency(:ALL).should == ISO4217::ALBANIAN_LEK
     end
 
     it "returns the american dollar" do
