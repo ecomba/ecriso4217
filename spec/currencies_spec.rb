@@ -2,7 +2,7 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
 describe "Currencies" do
   include ISO4217::CurrencyHelper
-  
+
   context "when searching for a currency" do
     it "returns the albanian leke" do
       currency(:ALL).should == ISO4217::ALBANIAN_LEKE
@@ -103,7 +103,7 @@ describe "Currencies" do
     it "returns the colombian peso" do
       currency(:COP).should == ISO4217::COLOMBIAN_PESO
     end
-    
+
     it "returns the Costa Rican colon" do
       currency(:CRC).should == ISO4217::COSTA_RICA_COLON
     end
@@ -135,7 +135,7 @@ describe "Currencies" do
     it "returns the egypt pound" do
       currency(:EGP).should == ISO4217::EGYPT_POUND
     end
-    
+
     it "returns the salvador colon" do
      currency(:SVC).should == ISO4217::EL_SALVADOR_COLON
     end
@@ -235,7 +235,7 @@ describe "Currencies" do
     it "returns the south korean won" do
       currency(:KRW).should == ISO4217::SOUTH_KOREAN_WON
     end
-    
+
     it "returns the kyrgyzstan soms" do
       currency(:KGS).should == ISO4217::KYRGYZSTAN_SOMS
     end

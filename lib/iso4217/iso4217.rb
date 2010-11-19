@@ -2,7 +2,7 @@ module ISO4217
   module CurrencyHelper
 
     COUNTRIES = {
-      :BE => EURO, 
+      :BE => EURO,
       :BG => EURO,
       :CA => CANADIAN_DOLLAR,
       :CZ => EURO,
@@ -13,7 +13,7 @@ module ISO4217
       :EL => EURO,
       :ES => EURO,
       :FR => EURO,
-      :GB => BRITAIN_POUND, 
+      :GB => BRITAIN_POUND,
       :IT => EURO,
       :CY => EURO,
       :LV => EURO,
@@ -31,7 +31,7 @@ module ISO4217
       :FI => EURO,
       :SE => EURO,
       :UK => BRITAIN_POUND,
-      :US => AMERICAN_DOLLAR 
+      :US => AMERICAN_DOLLAR
     }
 
     def currency_for(country_code, default_when_currency_not_found= :NAC)

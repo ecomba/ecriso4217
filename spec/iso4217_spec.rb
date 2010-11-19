@@ -1,11 +1,11 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
 describe ISO4217 do
-  
+
   include ISO4217::CurrencyHelper
 
-  EURO_COUNTRIES = [:BE, :BG, :CY, :CZ, :DK, :DE, :EE, :IE, :EL, :ES, :FR, :IT, :LV, :LT, :LU, :HU, 
-                    :MT, :NL, :AT, :PL, :PT, :RO, :SI, :SK, :FI, :SE] 
+  EURO_COUNTRIES = [:BE, :BG, :CY, :CZ, :DK, :DE, :EE, :IE, :EL, :ES, :FR, :IT, :LV, :LT, :LU, :HU,
+                    :MT, :NL, :AT, :PL, :PT, :RO, :SI, :SK, :FI, :SE]
 
   context "finding currency codes for known countries" do
     it "returns the currency euro code of the countries in the euro zone" do
@@ -13,27 +13,26 @@ describe ISO4217 do
         currency_code_for(country).should == 'EUR'
       end
     end
-    
+
     it "returns the currency code for the United Kingdom" do
       currency_code_for(:UK).should == 'GBP'
       currency_code_for(:GB).should == 'GBP'
     end
-    
+
     it "returns the currency code for United States of America" do
       currency_code_for(:US).should == 'USD'
     end
-    
+
     it "returns the currency code for Canada" do
       currency_code_for(:CA).should == 'CAD'
     end
   end
 
   context "finding currency codes or unknown countries" do
-    
+
     it "returns 'unknown' if it doesn't know the currency" do
       currency_code_for(:MARS).should == 'NAC'
     end
-   
 
     it "returns the requested default currency code if it doesn't know the currency" do
       currency_code_for(:MARS, 'GBP').should == 'GBP'

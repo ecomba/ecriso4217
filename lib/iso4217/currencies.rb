@@ -18,7 +18,7 @@ module ISO4217
     BELIZE_DOLLAR=                  Currency.new(:BZD, "U+0042U+005aU+0024", 'Belize dollar'),
     BERMUDA_DOLLARS=                Currency.new(:BMD, DOLLAR_SIGN, 'Bermudian dollar'),
     BOLIVIA_BOLIVIANOS=             Currency.new(:BOB, "#{DOLLAR_SIGN}U+0062", 'Boliviano'),
-    CONVERTIBLE_MARKA=              Currency.new(:BAM, "U+004bU+004d", 'Convertible marka'), 
+    CONVERTIBLE_MARKA=              Currency.new(:BAM, "U+004bU+004d", 'Convertible marka'),
     BOTSWANA_PULAS=                 Currency.new(:BWP, "U+0050", 'Pula'),
     BULGARIAN_LEVA=                 Currency.new(:BGN, "U+043bU+0432", 'Bulgarian lev'),
     BRAZILIAN_REAL=                 Currency.new(:BRL, "U+0052#{DOLLAR_SIGN}", 'Brazilian real'),
@@ -118,12 +118,12 @@ module ISO4217
     YEMEN_RIALS=                    Currency.new(:YER, "U+fdfc", 'Yemeni rial')
   ]
 
-  CURRENCY_BY_CODE = Hash.new 
+  CURRENCY_BY_CODE = Hash.new
 
   CURRENCIES.each do |currency|
     CURRENCY_BY_CODE[currency.code.to_s]= currency
   end
-  
+
   module CurrencyHelper
     def currency(code)
       CURRENCY_BY_CODE[code.to_s]
